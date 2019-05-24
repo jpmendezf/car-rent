@@ -1,5 +1,8 @@
 <!doctype html>
 <html lang="en">
+<?php
+include("config.php");
+?>
 
 <head>
     <!-- Basic Page Needs
@@ -16,7 +19,7 @@
 
     <!-- Titles
     ================================================== -->
-    <title>Taxi Cab 02</title>
+    <title><?php echo $site_config['site_title']. ' - '. $site_config['site_theme']; ?></title>
 
     <!-- Favicons
     ================================================== -->
@@ -55,13 +58,13 @@
                             <li>
                                 <a href="#" class="top-left-menu">
                                     <i class="fa fa-phone"></i>
-                                    <span>Call Us - 01623 030020</span>
+                                    <span>Call Us - <?php echo $site_config['helpline_number']; ?></span>
                                 </a>
                             </li>
                             <li>
                                 <a href="#" class="top-left-menu">
                                     <i class="fa fa-envelope"></i>
-                                    <span>example@domain.com</span>
+                                    <span><?php echo $site_config['email']; ?></span>
                                 </a>                                 
                             </li>
                         </ul><!-- /.header-top-menu -->
@@ -73,7 +76,7 @@
                         <ul class="header-top-menu">
                             <li>
                                 <a href="#" class="search-open">
-                                    <i class="fa fa-search"></i>
+                                    <i class="fa fa-user-circle-o"></i>
                                 </a>
                             </li>
                             <li>
@@ -94,9 +97,12 @@
         <div class="overlay overlay-scale">
             <button type="button" class="overlay-close">&#x2716;</button>
             <div class="overlay__content">
-                <form id="search-form" class="search-form outer" action="#" method="post">
+                <form id="search-form" class="search-form outer" action="login.php" method="post">
                     <div class="input-group">
-                        <input type="text" class=" input--full" placeholder="search text here ..."> 
+                        <label style="color: white">Username</label>
+                            <input style="border: 1px solid white;" type="text" name="username">
+                        <label style="color: white">Password</label>
+                            <input style="border: 1px solid white;" type="password" name="password">
                     </div>
                     <button class="btn text-uppercase search-button">Login</button>
                 </form>
@@ -156,7 +162,7 @@
             <div class="row">
                 <div class="col-md-3 col-sm-10 col-xs-10">
                     <div class="site-logo">
-                        <a href="index.html"><img src="assets/images/car-logo.png" alt="logo" /></a>
+                        <a href="index.php"><img src="uploaded_img/logo.png" alt="logo" /></a>
                     </div><!-- /.logo -->
                 </div><!-- /.col-md-3 -->
                 <div class="col-md-9 col-sm-2 col-xs-2 pd-right-0">
