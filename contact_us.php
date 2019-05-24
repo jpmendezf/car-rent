@@ -32,17 +32,17 @@ include("menu.php");
                     <div class="contact-us-content-left">
                         <div class="contact">
                             <h4><i class="fa fa-map-marker"></i>Address</h4>
-                            <p>112/B - Road 08/A Melbourne <br>Australia</p>
+                            <p><?php echo $site_config['address']; ?><br>United Kingdom</p>
                         </div><!-- /.contact -->
                     
                         <div class="contact">
                             <h4><i class="fa fa-phone"></i>Call</h4>
-                            <p>+88 0215469875 <br>666 35874692050</p>
+                            <p><?php echo $site_config['helpline_number']; ?></p>
                         </div><!-- /.contact -->
 
                         <div class="contact">
                             <h4><i class="fa fa-envelope"></i>Mail</h4>
-                            <p>example@domain.com <br />  examplemail@domain.com</p>
+                            <p><?php echo $site_config['email']; ?></p>
                         </div><!-- /.contact -->
 
                         <div class="contact">
@@ -59,7 +59,7 @@ include("menu.php");
                 
                 <div class="col-md-8">
                     <div class="contact-us-content-right">
-                        <form action="#">
+                        <form action="contact_us.php">
                             <h3 class="from-title">Have a question?</h3>
                             <i class="fa fa-paper-plane" aria-hidden="true"></i>
                             <div class="input-content clearfix">
@@ -99,7 +99,7 @@ include("menu.php");
                        <h2 class="title color-nevy">Map &amp; Directions</h2>
                     </div><!-- /.about-heading-content -->
                         <div class="header-map-content">
-                            <iframe height="550" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC871wKM6aoCLSV_pT3xBVsYzNGXaDh7Pw&q=121+King+St,Melbourne+VIC+3000,Australia" allowfullscreen="allowfullscreen"></iframe>
+                            <?php echo $site_config['maps']; ?>
                         </div><!-- /.map-content -->
                         <p>Find out how to find us from your current location</p>
                 </div><!-- /.col-md-12 -->
