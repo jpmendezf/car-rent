@@ -2,13 +2,13 @@
 App Name: Car Rental Platform
 Author : Jewel Ahman @jewel & M S Rahman @shadikur
 
-#Project for: count7 UK Ltd.
+# Project for: count7 UK Ltd.
 Contact : www.count7.co.uk //  info@count7.net
 
-#Instruction
+# Instruction
 Clone these script to cPanel or any webserver and configure the database under config files.
 
-#Server Requirement
+# Server Requirement
 
 PHP 7.0 +
 MySQL 5.5 +
