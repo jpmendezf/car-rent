@@ -75,14 +75,16 @@ include("menu.php");
                                 <div class="slider-form-content">
                                     <h2 class="slider-form-title text-center">For rates &amp; Availability</h2><!-- /.slider-form-title -->
                                     <h4 class="slider-form-subtitle text-center">Search for your Texi</h4>
-                                    <form action="#" method="get" class="advance-search-query check-vehicle-two yellow-theme">
+                                    <form action="search_process.php" method="get" class="advance-search-query check-vehicle-two yellow-theme">
                                         <div class="regular-search">                        
                                             <div class="row">
                                                 <div class="col-md-4">
                                                     <label class="text-uppercase">Picking up location</label>
                                                     <div class="input">
                                                         <i class="fa fa-map-marker"></i>
-                                                        <input type="text" placeholder="Your location" class="pick-location form-controller">
+                                                        <select class="pick-location form-controller">
+                                                            <option>Romford HeadOffice</option>
+                                                        </select>
                                                     </div><!--/.input-->
                                                 </div><!--/.col-md-4-->
 
@@ -108,7 +110,9 @@ include("menu.php");
                                                     <label class="text-uppercase">Dropping off location</label>
                                                     <div class="input">
                                                         <i class="fa fa-map-marker"></i>
-                                                        <input type="text" placeholder="Off your location" class="drop-location form-controller">
+                                                        <select class="drop-location form-controller">
+                                                            <option>Romford HeadOffice</option>
+                                                        </select>
                                                     </div><!--/.input-->
                                                 </div><!--/.col-md-4-->
 
