@@ -83,7 +83,7 @@ include("menu.php");
                                                     <div class="input">
                                                         <i class="fa fa-map-marker"></i>
                                                         <select class="pick-location form-controller">
-                                                            <option>Romford HeadOffice</option>
+                                                            <option value="headoffice">Romford HeadOffice</option>
                                                         </select>
                                                     </div><!--/.input-->
                                                 </div><!--/.col-md-4-->
@@ -111,7 +111,7 @@ include("menu.php");
                                                     <div class="input">
                                                         <i class="fa fa-map-marker"></i>
                                                         <select class="drop-location form-controller">
-                                                            <option>Romford HeadOffice</option>
+                                                            <option value="headoffice">Romford HeadOffice</option>
                                                         </select>
                                                     </div><!--/.input-->
                                                 </div><!--/.col-md-4-->
@@ -140,7 +140,7 @@ include("menu.php");
                                                     <label class="text-uppercase">Your Budget</label>
                                                     <div class="input">
                                                         <i class="fa fa-money"></i>
-                                                        <input type="text" class="budget-fields form-controller" placeholder="Start form $20">
+                                                        <input type="text" class="budget-fields form-controller" placeholder="Start form £20">
                                                     </div><!--/.input-->
                                                 </div><!--/.col-md-4-->
                                                 <div class="col-md-4">
